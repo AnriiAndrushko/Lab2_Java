@@ -12,5 +12,8 @@ public class Main {
         System.out.println("------------------------");
         carFilter.getCarsByModelAndOperatingTime(carStorage.cars, "Camaro", 2000)
                 .forEach(System.out::println);
+        System.out.println("------------------------");
+        carFilter.getCarsByYearAndPrice(carStorage.cars, 2000, 30000.0)
+                .forEach(System.out::println);
     }
 }

@@ -22,6 +22,8 @@ public class CarFilerImpl implements CarFilter {
 
     @Override
     public List<Car> getCarsByYearAndPrice(Car[] cars, int year, double price) {
-        return null;
+        return Arrays.stream(cars)
+                .filter(c-> c.getYear() == year && c.getPrice() > price)
+                .collect(Collectors.toList());
     }
 }
