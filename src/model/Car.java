@@ -1,7 +1,7 @@
 package model;
 
 public class Car {
-    private Long id;
+    private final Long id;
     private String brand;
     private String model;
     private int year;
