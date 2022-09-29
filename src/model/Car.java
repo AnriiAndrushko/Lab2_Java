@@ -6,7 +6,7 @@ public class Car {
     private String model;
     private int year;
     private String color;
-    private double peace;
+    private double price;
     private String registrationNumber;
 
     private Car(Builder builder) {
@@ -15,7 +15,7 @@ public class Car {
         this.model = builder.model;
         this.year = builder.year;
         this.color = builder.color;
-        this.peace = builder.peace;
+        this.price = builder.price;
         this.registrationNumber = builder.registrationNumber;
     }
 
@@ -25,7 +25,7 @@ public class Car {
         private String model;
         private int year;
         private String color;
-        private double peace;
+        private double price;
         private String registrationNumber;
 
         public Builder setId(Long id) {
@@ -53,8 +53,8 @@ public class Car {
             return this;
         }
 
-        public Builder setPeace(double peace) {
-            this.peace = peace;
+        public Builder setPrice(double price) {
+            this.price = price;
             return this;
         }
 
@@ -88,8 +88,8 @@ public class Car {
         return color;
     }
 
-    public double getPeace() {
-        return peace;
+    public double getPrice() {
+        return price;
     }
 
     public String getRegistrationNumber() {
@@ -104,7 +104,7 @@ public class Car {
                 + ", model='" + model + '\''
                 + ", year=" + year
                 + ", color='" + color + '\''
-                + ", peace=" + peace
+                + ", price=" + price
                 + ", registrationNumber='" + registrationNumber + '\''
                 + '}';
     }

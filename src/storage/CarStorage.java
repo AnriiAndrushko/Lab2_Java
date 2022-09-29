@@ -53,7 +53,7 @@ public class CarStorage {
                     .setModel(MODEL[i % MODEL.length])
                     .setYear(1930 + i)
                     .setColor(COLORS[i % COLORS.length])
-                    .setPeace(1000 * i)
+                    .setPrice(1000 * i)
                     .setRegistrationNumber("SQ" + (i + 1000) + "GP")
                     .build();
             cars[i] = car;
