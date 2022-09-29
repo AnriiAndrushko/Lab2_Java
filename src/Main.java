@@ -9,5 +9,8 @@ public class Main {
     public static void main(String[] args) {
         carFilter.getCarsByBrands(carStorage.cars, "Kia")
                 .forEach(System.out::println);
+        System.out.println("------------------------");
+        carFilter.getCarsByModelAndOperatingTime(carStorage.cars, "Camaro", 2000)
+                .forEach(System.out::println);
     }
 }

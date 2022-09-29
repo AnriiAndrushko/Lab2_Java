@@ -15,7 +15,9 @@ public class CarFilerImpl implements CarFilter {
 
     @Override
     public List<Car> getCarsByModelAndOperatingTime(Car[] cars, String model, int yearsOfOperating) {
-        return null;
+        return Arrays.stream(cars)
+                .filter(c -> c.getModel().equals(model) && c.getYear() > yearsOfOperating)
+                .collect(Collectors.toList());
     }
 
     @Override
